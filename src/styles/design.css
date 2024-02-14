@@ -1,0 +1,89 @@
+header {
+  background-image: url(../../imgs/HeaderBackground.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+.logo {
+  width: 60%;
+}
+body {
+  background-color: #ffe7ef;
+}
+.ListNav {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  margin-left: auto;
+  padding-bottom: 2%;
+}
+.ListNav a {
+  font-weight: 500;
+  font-family: "Varela Round", sans-serif;
+  font-size: 30;
+  font-style: normal;
+  text-decoration: none;
+}
+.Hero {
+  display: flex;
+  justify-content: space-around;
+  align-content: space-evenly;
+  align-items: stretch;
+  margin: 5%;
+  padding-top: 100px;
+}
+.Catchy {
+  font-family: "Pacifico", cursive;
+  font-weight: 300;
+  font-size: 50px;
+  font-style: normal;
+  text-align: left;
+  padding-bottom: 5%;
+}
+.intro {
+  text-align: left;
+  padding-right: 30%;
+  font-size: 16px;
+  font-family: "Varela Round", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.btnStart {
+  display: inline-block;
+  background: #e195bb;
+  border: 0;
+  color: #ffffff;
+  padding: 10px 100px;
+  /* margin: 30px 0; */
+  border-radius: 100px;
+}
+
+.btnStart:hover {
+  background: #a40f5a;
+}
+
+.Sect {
+  margin-top: 100px;
+}
+h2 {
+  text-align: center;
+  margin: 50px 0px;
+}
+
+.Card-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-content: space-between;
+  align-items: stretch;
+}
+.ProductDiv {
+  display: inline-block;
+  width: 150px;
+  margin: 25px;
+}
+.ReviewDiv {
+  display: inline-block;
+  width: 150px;
+  margin: 25px;
+}

@@ -5,138 +5,130 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="dist/style.css" />
-    <title>Waves hair styling</title>
+    <link rel="stylesheet" href="src/styles/design.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Waves</title>
   </head>
   <body>
     <header class="header">
-      <img src="imgs/Waves.png" alt="logo" width="200px" />
+      <img src="imgs/WavesLogo.png" alt="logo" class="logo" />
       <nav>
-        <ul>
+        <ul class="ListNav">
           <li>
             <a href="">About</a>
           </li>
           <li>
-            <a href="">products</a>
+            <a href="#products">Products</a>
           </li>
           <li>
-            <a href="">reviews</a>
+            <a href="">Reviews</a>
           </li>
           <li>
-            <a href="">services</a>
+            <a href="">Subscription</a>
           </li>
         </ul>
       </nav>
     </header>
-    <div>
-      <img src="" alt="" />
-      <h1>Waves</h1>
-      <p>
-        Welcome to Waves, your ultimate destination for all what you need for
-        hair styling! Our website offers a comprehensive range of innovative and
-        top-quality hair styling devices designed to cater to every hair type
-        and style preference. From hair straighteners and curling irons to
-        advanced hair dryers and styling brushes, we have everything you need to
-        achieve salon-worthy looks right in the comfort of your own home. Our
-        user-friendly interface makes shopping a breeze, with detailed product
-        descriptions and helpful customer reviews to guide your selection.
-        Whether you're looking to create sleek, smooth locks or voluminous
-        curls, Waves is your one-stop shop for all your hair styling needs.
-        Discover the perfect tools to unleash your creativity and elevate your
-        hair game to new heights with us today!
-      </p>
-      <button>Dive in</button>
-      <!-- <a href="">Dive in</a> -->
+    <div class="Hero">
+      <div>
+        <h1 class="Catchy">
+          your ultimate destination <br />
+          for all what you need for hair styling!
+        </h1>
+        <p class="intro">
+          Our website offers a comprehensive range of innovative and top-quality
+          hair styling devices designed to cater to every hair type and style
+          preference. From hair straighteners and curling irons to advanced hair
+          dryers and styling brushes, we have everything you need to achieve
+          salon-worthy looks right in the comfort of your own home. Our
+          user-friendly interface makes shopping a breeze, with detailed product
+          descriptions and helpful customer reviews to guide your selection.
+          Whether you're looking to create sleek, smooth locks or voluminous
+          curls, Waves is your one-stop shop for all your hair styling needs.
+          Discover the perfect tools to unleash your creativity and elevate your
+          hair game to new heights with us today!
+        </p>
+      </div>
+      <div><button class="btnStart">Dive in →</button></div>
     </div>
     <main>
-      <!-- <section>
-        <img src="" alt="" />
-        <h1>Waves</h1>
-        <p>
-          Welcome to Waves, your ultimate destination for all what you need for
-          hair styling! Our website offers a comprehensive range of innovative
-          and top-quality hair styling devices designed to cater to every hair
-          type and style preference. From hair straighteners and curling irons
-          to advanced hair dryers and styling brushes, we have everything you
-          need to achieve salon-worthy looks right in the comfort of your own
-          home. Our user-friendly interface makes shopping a breeze, with
-          detailed product descriptions and helpful customer reviews to guide
-          your selection. Whether you're looking to create sleek, smooth locks
-          or voluminous curls, Waves is your one-stop shop for all your hair
-          styling needs. Discover the perfect tools to unleash your creativity
-          and elevate your hair game to new heights with us today!
-        </p>
-        <button>Dive in</button>
-        <a href="">Dive in</a> >> or ???
-      </section> -->
-      <section>
-        <h2>Products</h2>
-        <div>
-          <img
-            src="imgs/HairStraightener.png"
-            alt="straightener, your ticket to salon-quality results."
-            width="100px"
-          />
-          <h3>SilkGlide Pro</h3>
-          <p>
-            The ultimate tool for achieving sleek, salon-quality results at
-            home. With advanced ceramic plates and adjustable temperature
-            settings, it effortlessly smooths all hair types. Say goodbye to
-            frizz and hello to flawless, silky hair in no time.
-          </p>
-          <p>275 rs</p>
-          <button>Add to cart</button>
-        </div>
-        <div>
-          <img
-            src="imgs/CurlingIron.png"
-            alt="curling iron, your Ultimate Styling Companion."
-            width="100px
+      <section class="Sect">
+        <h2 id="products">Products</h2>
+        <div class="Card-wrapper">
+          <div class="ProductDiv">
+            <img
+              src="imgs/HairStraightener.png"
+              alt="straightener, your ticket to salon-quality results."
+              width="100px"
+            />
+            <h3>SilkGlide Pro</h3>
+            <p>
+              The ultimate tool for achieving sleek, salon-quality results at
+              home. With advanced ceramic plates and adjustable temperature
+              settings, it effortlessly smooths all hair types. Say goodbye to
+              frizz and hello to flawless, silky hair in no time.
+            </p>
+            <p>275 rs</p>
+            <button>Add to cart</button>
+          </div>
+          <div class="ProductDiv">
+            <img
+              src="imgs/CurlingIron.png"
+              alt="curling iron, your Ultimate Styling Companion."
+              width="100px
           "
-          />
-          <h3>GlamCurl Max</h3>
-          <p>
-            Our top-tier curling iron: crafted for perfect curls effortlessly.
-            With its ceramic barrel and adjustable heat, get salon-quality
-            results quickly. Say hello to beautiful, lasting waves with ease.
-          </p>
-          <p>202 rs</p>
-          <button>Add to cart</button>
-        </div>
-        <div>
-          <img
-            src="imgs/HairDryer.png"
-            alt="hair dryer, your Fast-Track to Fabulous Hair."
-            width="100px"
-          />
-          <h3>SwiftStyle Shine</h3>
-          <p>
-            Introducing our premium hair dryer, the ultimate tool for
-            professional results in record time. With a powerful motor and
-            advanced ionic technology, it minimizes frizz and enhances shine.
-            Get sleek, salon-quality hair effortlessly.
-          </p>
-          <p>147 rs</p>
-          <button>Add to cart</button>
-        </div>
-        <div>
-          <img
-            src="imgs/StylingBrush.png"
-            alt="styling brush, effortless Beauty in Every Stroke."
-            width="100px"
-          />
-          <h3>StyleEase Glamour</h3>
-          <p>
-            Meet our top-notch hair styling brush: crafted for flawless styling
-            with ease. Its innovative design effortlessly detangles, smoothens,
-            and adds volume, suitable for all hair types. Enjoy having
-            effortless beauty in minutes with our hair styling brush.
-          </p>
-          <p>183 rs</p>
-          <button>Add to cart</button>
+            />
+            <h3>GlamCurl Max</h3>
+            <p>
+              Our top-tier curling iron: crafted for perfect curls effortlessly.
+              With its ceramic barrel and adjustable heat, get salon-quality
+              results quickly. Say hello to beautiful, lasting waves with ease.
+            </p>
+            <p>202 rs</p>
+            <button>Add to cart</button>
+          </div>
+          <div class="ProductDiv">
+            <img
+              src="imgs/HairDryer.png"
+              alt="hair dryer, your Fast-Track to Fabulous Hair."
+              width="100px"
+            />
+            <h3>SwiftStyle Shine</h3>
+            <p>
+              Introducing our premium hair dryer, the ultimate tool for
+              professional results in record time. With a powerful motor and
+              advanced ionic technology, it minimizes frizz and enhances shine.
+              Get sleek, salon-quality hair effortlessly.
+            </p>
+            <p>147 rs</p>
+            <button>Add to cart</button>
+          </div>
+          <div class="ProductDiv">
+            <img
+              src="imgs/StylingBrush.png"
+              alt="styling brush, effortless Beauty in Every Stroke."
+              width="100px"
+            />
+            <h3>StyleEase Glamour</h3>
+            <p>
+              Meet our top-notch hair styling brush: crafted for flawless
+              styling with ease. Its innovative design effortlessly detangles,
+              smoothens, and adds volume, suitable for all hair types. Enjoy
+              having effortless beauty in minutes with our hair styling brush.
+            </p>
+            <p>183 rs</p>
+            <button>Add to cart</button>
+          </div>
         </div>
       </section>
-      <section>
+      <section class="Sect">
         <div>
           <h2>Our Satisfied Customers</h2>
           <p>
@@ -148,8 +140,8 @@
             our products and services firsthand.
           </p>
         </div>
-        <div>
-          <div>
+        <div class="Card-wrapper">
+          <div class="ReviewDiv">
             <img src="imgs/profilePic.jpg" alt="raghad avatar" width="50px" />
             <h3>Raghad</h3>
             <h4>Bought styling brush</h4>
@@ -159,7 +151,7 @@
             </span>
             <p>Jan 18 2024</p>
           </div>
-          <div>
+          <div class="ReviewDiv">
             <img src="imgs/profilePic.jpg" alt="shamma avatar" width="50px" />
             <h3>Shamma</h3>
             <h4>Bought Curling Iron</h4>
@@ -170,7 +162,7 @@
             </span>
             <p>Mar 1 2022</p>
           </div>
-          <div>
+          <div class="ReviewDiv">
             <img src="imgs/profilePic.jpg" alt="bashayer avatar" width="50px" />
             <h3>Bashayer</h3>
             <h4>Bought Hair Dryer</h4>
@@ -181,7 +173,7 @@
             </span>
             <p>Sep 29 2023</p>
           </div>
-          <div>
+          <div class="ReviewDiv">
             <img src="imgs/profilePic.jpg" alt="sarah avatar" width="50px" />
             <h3>Sarah</h3>
             <h4>Bought Hair Straightener</h4>
@@ -192,6 +184,15 @@
             </span>
             <p>Jun 15 2023</p>
           </div>
+        </div>
+      </section>
+      <section>
+        <div>
+          <h2>Subsription for latest</h2>
+          <form action="">
+            <label for="Cemail">Enter your Email</label>
+            <input type="email" name="Cemail" id="Cemail" />
+          </form>
         </div>
       </section>
     </main>
@@ -211,6 +212,9 @@
         </li>
         <li>
           <a href="">privacy policy</a>
+        </li>
+        <li>
+          <a href=""><i class="fa fa-regular fa-phone"></i>contact</a>
         </li>
       </ul>
     </footer>
