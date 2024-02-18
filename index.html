@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Varela+Round&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Smooch+Sans:wght@100..900&display=swap"
       rel="stylesheet"
     />
 
@@ -22,16 +22,16 @@
       <nav>
         <ul class="ListNav">
           <li>
-            <a href="">About</a>
+            <a href="#about">About</a>
           </li>
           <li>
             <a href="#products">Products</a>
           </li>
           <li>
-            <a href="">Reviews</a>
+            <a href="#reviews">Reviews</a>
           </li>
           <li>
-            <a href="">Subscription</a>
+            <a href="#sub">Subscription</a>
           </li>
         </ul>
       </nav>
@@ -56,7 +56,8 @@
           hair game to new heights with us today!
         </p>
       </div>
-      <div><button class="btnStart">Dive in →</button></div>
+
+      <a href="#products" class="btn btn--start">Dive in</a>
     </div>
     <main>
       <section class="Sect">
@@ -66,9 +67,9 @@
             <img
               src="imgs/HairStraightener.png"
               alt="straightener, your ticket to salon-quality results."
-              width="100px"
+              class="productPic"
             />
-            <h3>SilkGlide Pro</h3>
+            <h3 class="ProductDiv--ProductName">SilkGlide Pro</h3>
             <p>
               The ultimate tool for achieving sleek, salon-quality results at
               home. With advanced ceramic plates and adjustable temperature
@@ -76,31 +77,42 @@
               frizz and hello to flawless, silky hair in no time.
             </p>
             <p>275 rs</p>
-            <button>Add to cart</button>
+            <button
+              aria-label="Add SilkGlide Pro hair straightener cart"
+              class="btnCart"
+            >
+              Add to cart
+            </button>
           </div>
           <div class="ProductDiv">
             <img
               src="imgs/CurlingIron.png"
-              alt="curling iron, your Ultimate Styling Companion."
-              width="100px
-          "
+              alt="curling iron, your Ultimate
+            Styling Companion."
+              class="productPic"
             />
-            <h3>GlamCurl Max</h3>
+            <h3 class="ProductDiv--ProductName">GlamCurl Max</h3>
             <p>
               Our top-tier curling iron: crafted for perfect curls effortlessly.
               With its ceramic barrel and adjustable heat, get salon-quality
-              results quickly. Say hello to beautiful, lasting waves with ease.
+              results quickly. Say goodbye to frizzy, uneven curls and say hello
+              to beautiful, lasting waves with ease.
             </p>
             <p>202 rs</p>
-            <button>Add to cart</button>
+            <button
+              aria-label="Add GlamCurl Max curling iron to cart"
+              class="btnCart"
+            >
+              Add to cart
+            </button>
           </div>
           <div class="ProductDiv">
             <img
               src="imgs/HairDryer.png"
               alt="hair dryer, your Fast-Track to Fabulous Hair."
-              width="100px"
+              class="productPic"
             />
-            <h3>SwiftStyle Shine</h3>
+            <h3 class="ProductDiv--ProductName">SwiftStyle Shine</h3>
             <p>
               Introducing our premium hair dryer, the ultimate tool for
               professional results in record time. With a powerful motor and
@@ -108,30 +120,40 @@
               Get sleek, salon-quality hair effortlessly.
             </p>
             <p>147 rs</p>
-            <button>Add to cart</button>
+            <button
+              aria-label="Add SwiftStyle Shine hair dryer to cart"
+              class="btnCart"
+            >
+              Add to cart
+            </button>
           </div>
           <div class="ProductDiv">
             <img
               src="imgs/StylingBrush.png"
               alt="styling brush, effortless Beauty in Every Stroke."
-              width="100px"
+              class="productPic"
             />
-            <h3>StyleEase Glamour</h3>
+            <h3 class="ProductDiv--ProductName">StyleEase Glamour</h3>
             <p>
               Meet our top-notch hair styling brush: crafted for flawless
               styling with ease. Its innovative design effortlessly detangles,
-              smoothens, and adds volume, suitable for all hair types. Enjoy
-              having effortless beauty in minutes with our hair styling brush.
+              smoothens, and adds volume, suitable for all types.Enjoy having
+              effortless beauty in minutes with our hair styling brush.
             </p>
             <p>183 rs</p>
-            <button>Add to cart</button>
+            <button
+              aria-label="Add StyleEase Glamour styling brush to cart"
+              class="btnCart"
+            >
+              Add to cart
+            </button>
           </div>
         </div>
       </section>
-      <section class="Sect">
+      <section id="reviews" class="Sect">
         <div>
           <h2>Our Satisfied Customers</h2>
-          <p>
+          <p class="brief">
             Here you'll find real stories of happiness and delight from
             customers just like you. Our customers are at the heart of
             everything we do, and their satisfaction is our ultimate goal. From
@@ -140,59 +162,119 @@
             our products and services firsthand.
           </p>
         </div>
-        <div class="Card-wrapper">
+        <div class="DivCard-wrapper">
           <div class="ReviewDiv">
-            <img src="imgs/profilePic.jpg" alt="raghad avatar" width="50px" />
-            <h3>Raghad</h3>
-            <h4>Bought styling brush</h4>
-            <span>
+            <img
+              class="ReviewDiv--img"
+              src="imgs/profilePic.jpg"
+              alt="raghad avatar"
+            />
+            <h3 class="ReviewDiv--name">Raghad</h3>
+            <h4 class="ReviewDiv--bought">Bought styling brush</h4>
+            <span class="ReviewDiv--rate">★★★★★</span>
+            <span class="ReviewDiv--comment">
               "Couldn't be happier with my new 'StyleEase Glamour'! Effortlessly
-              smooths and adds volume. Best styling brush I've ever used!"
+              smooths and adds volume. Best styling brush I've ever used!Highly
+              recomend it just run don't walk!"
             </span>
-            <p>Jan 18 2024</p>
+            <p class="ReviewDiv--date">Jan 18 2024</p>
           </div>
           <div class="ReviewDiv">
-            <img src="imgs/profilePic.jpg" alt="shamma avatar" width="50px" />
-            <h3>Shamma</h3>
-            <h4>Bought Curling Iron</h4>
-            <span>
+            <img
+              class="ReviewDiv--img"
+              src="imgs/profilePic.jpg"
+              alt="shamma avatar"
+            />
+            <h3 class="ReviewDiv--name">Shamma</h3>
+            <h4 class="ReviewDiv--bought">Bought Curling Iron</h4>
+            <span class="ReviewDiv--rate">★★★★★</span>
+            <span class="ReviewDiv--comment">
               "Obsessed with my 'GlamCurl Max'! Salon-quality curls that last
               all day. It's a game-changer for my hair routine. Love the
-              adjustable heat settings!"
+              adjustable heat settings!."
             </span>
-            <p>Mar 1 2022</p>
+            <p class="ReviewDiv--date">Mar 1 2022</p>
           </div>
           <div class="ReviewDiv">
-            <img src="imgs/profilePic.jpg" alt="bashayer avatar" width="50px" />
-            <h3>Bashayer</h3>
-            <h4>Bought Hair Dryer</h4>
-            <span>
+            <img
+              class="ReviewDiv--img"
+              src="imgs/profilePic.jpg"
+              alt="bashayer avatar"
+            />
+            <h3 class="ReviewDiv--name">Bashayer</h3>
+            <h4 class="ReviewDiv--bought">Bought Hair Dryer</h4>
+            <span class="ReviewDiv--rate">★★★★★</span>
+            <span class="ReviewDiv--comment">
               "Thrilled with my new 'SwiftStyle Shine' Hair Dryer! It's like
               having a salon blowout at home every time. Dries hair fast,
               smooth, and frizz-free. Best purchase ever!"
             </span>
-            <p>Sep 29 2023</p>
+            <p class="ReviewDiv--date">Sep 29 2023</p>
           </div>
           <div class="ReviewDiv">
-            <img src="imgs/profilePic.jpg" alt="sarah avatar" width="50px" />
-            <h3>Sarah</h3>
-            <h4>Bought Hair Straightener</h4>
-            <span>
+            <img
+              class="ReviewDiv--img"
+              src="imgs/profilePic.jpg"
+              alt="sarah avatar"
+            />
+            <h3 class="ReviewDiv--name">Sarah</h3>
+            <h4 class="ReviewDiv--bought">Bought Hair Straightener</h4>
+            <span class="ReviewDiv--rate">★★★★★</span>
+            <span class="ReviewDiv--comment">
               "Absolutely satisfied with my new 'SilkGlide Pro' Hair
               Straightener! It's a total game-changer. Super sleek design, heats
-              up quickly, and leaves my hair silky smooth in minutes.The best!"
+              up quickly, and leaves my hair silky smooth in minutes."
             </span>
-            <p>Jun 15 2023</p>
+            <p class="ReviewDiv--date">Jun 15 2023</p>
           </div>
         </div>
       </section>
-      <section>
+      <section id="about" class="Sect">
+        <h2>Get to know Waves</h2>
+        <p class="aboutus">
+          Waves, where our passion for perfect hair begins! We believe that
+          great hair starts with the right tools, and that's why we're dedicated
+          to providing you with the best selection of hair styling devices on
+          the market.<br /><br />Whether you're looking to achieve sleek
+          straight locks, voluminous curls, or effortless waves, we have
+          everything you need to bring your hair dreams to life.<br />
+          <br />Our journey in the hair styling industry began with a simple
+          mission: to empower individuals to express themselves through their
+          hair. <br /><br />Our founders, started this venture out of their own
+          frustration with the lack of reliable hair styling tools on the
+          market, determined to make a difference.<br /><br />
+          Today, Waves stands as a testament to their vision, with a focus on
+          quality, innovation, and convenience, our collection of hair
+          straightener, curling iron, hair dryer, and styling brush ensures that
+          you can create salon-worthy looks from the comfort of your own home.
+        </p>
+      </section>
+      <section id="sub" class="Sect">
         <div>
-          <h2>Subsription for latest</h2>
-          <form action="">
-            <label for="Cemail">Enter your Email</label>
-            <input type="email" name="Cemail" id="Cemail" />
-          </form>
+          <h2>Join our family</h2>
+          <p class="brief">
+            "Sign up now to unlock your path to hair perfection! Subscribe for
+            the latest trends, expert tips, and exclusive offers straight to
+            your inbox. Elevate your hair game with us and unlock a world of
+            opportunities!"
+          </p>
+          <div class="subForm">
+            <form action="">
+              <label for="Cname">Enter your Name</label>
+              <input type="text" name="Cname" id="Cname" />
+              <label for="Cemail">Enter your Email</label>
+              <input type="email" name="Cemail" id="Cemail" />
+              <label for="Cnumber">Enter your Number</label>
+              <input type="tel" name="Cnumber" id="Cnumber" />
+              <button
+                class="btn btn--submit"
+                aria-label="Subscription form"
+                type="submit"
+              >
+                Submit
+              </button>
+            </form>
+          </div>
         </div>
       </section>
     </main>
@@ -200,22 +282,24 @@
       <ul>
         <li>
           <a href="">Social</a>
+          <!-- remove and add it as icons -->
         </li>
         <li>
-          <a href="">Contact</a>
+          <a href="">Contact us</a>
         </li>
         <li>
           <a href="">About</a>
         </li>
         <li>
-          <a href="">products</a>
+          <a href="">privacy Policy</a>
         </li>
         <li>
-          <a href="">privacy policy</a>
+          <a href="">Products</a>
         </li>
-        <li>
+        <li><a href="">Reviews</a></li>
+        <!-- <li>
           <a href=""><i class="fa fa-regular fa-phone"></i>contact</a>
-        </li>
+        </li> -->
       </ul>
     </footer>
   </body>
