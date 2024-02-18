@@ -5,7 +5,6 @@ span,
 label {
   font-family: "Smooch Sans", sans-serif;
 }
-
 h2 {
   color: #9eb889;
   font-family: "Pacifico", cursive;
@@ -17,18 +16,23 @@ h2 {
   text-align: center;
   margin: 50px 0px;
 }
-
 header {
   background-image: url(../../imgs/HeaderBackground.png);
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
-}
-nav ul {
-  position: static;
+  opacity: 90%;
 }
 .logo {
-  width: 60%;
+  width: 30%;
+}
+.cart {
+  position: fixed;
+  left: 90%;
+  top: 6%;
+  background-color: white;
+  padding: 10px;
+  border-radius: 35px;
 }
 body {
   margin: 0;
@@ -91,12 +95,6 @@ body {
   color: #ffffff;
   text-decoration: none;
 }
-.btn--submit {
-  margin: 5% 40% 10% 40%;
-  font-size: 30px;
-  font-weight: 600;
-  font-family: "Smooch Sans", sans-serif;
-}
 .btn--start {
   display: inline-block;
   font-size: 30px;
@@ -140,7 +138,7 @@ body {
   background: #cc5565;
   transform: translateY(-5px);
 }
-.Sect {
+.Sections-style {
   margin-top: 150px;
 }
 .brief {
@@ -150,13 +148,12 @@ body {
   color: #7a654d;
   text-align: center;
 }
-.ProductDiv {
+.Product-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   align-content: space-between;
   align-self: flex-end;
-
   height: 600px;
   background-color: rgba(255, 255, 255, 0.3);
   border-radius: 80px;
@@ -165,39 +162,37 @@ body {
   padding-bottom: 1%;
   margin: 10px;
 }
-.ProductDiv:hover {
+.Product-container:hover {
   background-color: rgba(255, 255, 255, 1);
 }
 .productPic {
   width: 70%;
 }
-.ProductDiv--ProductName {
+.Product-container--ProductName {
   font-size: 25px;
   font-weight: 600;
   margin: 20px 0;
   color: #5f503f;
 }
-.ProductDiv p {
+.Product-container p {
   font-weight: 500;
   font-size: 20px;
   padding: 0 5%;
   color: #7a654d;
 }
-.DivCard-wrapper {
+.ReviewCard-wrapper {
   display: flex;
   margin-right: 3%;
   margin-left: 3%;
 }
-.ReviewDiv {
+.Review-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   align-content: space-between;
   align-self: baseline;
-
-  position: relative;
-  /* does it effect anything? */
-
+  /* position: relative; */
+  /* does it effect anything? yes.the fixed position*/
   width: 400px;
   height: 400px;
   padding: 20px;
@@ -207,40 +202,39 @@ body {
   margin-right: 1%;
   margin-left: 1%;
   border-radius: 25px;
-
   padding-top: 1%;
   padding-bottom: 1%;
 }
-.ReviewDiv:hover {
+.Review-container:hover {
   box-shadow: 0 1px 20px;
 }
-.ReviewDiv--name {
+.Review-container--name {
   margin: 9px 0;
   font-size: 27px;
   color: #5f503f;
 }
-.ReviewDiv--bought {
+.Review-container--bought {
   color: #5f503f;
   font-size: 19px;
   font-weight: 600;
   margin-top: 0;
   margin-bottom: 10px;
 }
-.ReviewDiv--img {
+.Review-container--img {
   margin-top: 12px;
   width: 100px;
   border-radius: 10px;
 }
-.ReviewDiv--rate {
+.Review-container--rate {
   margin-bottom: 30px;
   color: #5f503f;
 }
-.ReviewDiv--comment {
+.Review-container--comment {
   color: #5f503f;
   font-size: 17px;
   font-weight: 500;
 }
-.ReviewDiv--date {
+.Review-container--date {
   margin: 30px;
   color: #5f503f;
 }
@@ -257,6 +251,9 @@ body {
   align-items: center;
   justify-content: space-evenly;
 }
+.brief--sub {
+  padding: 1% 5% 0% 5%;
+}
 form label {
   display: block;
   font-size: 35px;
@@ -268,8 +265,59 @@ form input {
   display: block;
   width: 500px;
   height: 35px;
+  outline: none;
 }
-
+.btn--submit {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  font-size: 30px;
+  font-weight: 600;
+  font-family: "Smooch Sans", sans-serif;
+}
 footer {
   background-color: rgba(255, 255, 255, 0.5);
+}
+.logo-footer {
+  width: 90px;
+}
+.footer-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 1%;
+}
+.footer-sections {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 0;
+  list-style: none;
+}
+.footer-sections p {
+  font-size: 24px;
+  text-align: center;
+}
+.footer-sections a {
+  font-weight: 500;
+  font-family: "Smooch Sans", sans-serif;
+  font-size: 25px;
+  font-style: normal;
+  text-decoration: none;
+  color: #7a654d;
+  /* font-weight: 600; */
+}
+.social {
+  margin: 0 10px;
+}
+.footer-sections li {
+  margin-top: 10px;
+}
+.ListNav a:hover {
+  color: #5f503f;
+  text-decoration: underline;
+}
+.brief--privacy {
+  text-align: left;
+  font-size: 24px;
+  font-weight: 450;
 }
