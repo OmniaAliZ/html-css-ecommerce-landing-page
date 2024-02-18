@@ -165,7 +165,7 @@ body {
 .Product-container:hover {
   background-color: rgba(255, 255, 255, 1);
 }
-.productPic {
+.product-picture {
   width: 70%;
 }
 .Product-container--ProductName {
@@ -245,7 +245,7 @@ body {
   text-align: left;
   padding: 50px;
 }
-.subForm {
+.subscription-Form {
   display: flex;
   flex-direction: column;
   align-items: center;
